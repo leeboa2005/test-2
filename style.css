@@ -1,0 +1,300 @@
+/* font */
+
+@font-face {
+  font-family: 'LINESeedKR-Bd';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LINESeedKR-Rg';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Rg.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LINESeedKR-Th';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Th.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* all */
+#wapper {
+  position: relative;
+}
+
+body {
+  /* background-color: #E9E9E9; */
+  font-family: 'LINESeedKR-Rg';
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* header */
+.top-header {
+  position: fixed;
+  width: 100%;
+}
+
+.top-header-content {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.logo {
+  width: 152px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.logo img {
+  width: 100%
+}
+
+.search-form {
+  width: 430px;
+  height: 42px;
+}
+
+.search-form .search-form-field {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.search-form {
+  background-color: #fbf9f9;
+  filter: brightness(90%);
+  border-radius: 8px;
+}
+
+.search-form input {
+  background-color: #fbf9f9;
+  width: 360px;
+  height: 100%;
+  border-radius: 8px;
+  padding: 10px 12px;
+  border: none;
+  box-sizing: border-box;
+}
+
+/* .best-warp {
+  margin-left: 20px;
+  position: relative;
+  overflow:hidden;
+  width: 120px;
+  height:25px
+}
+
+.best-warp .best-country li{
+   width: 120px;
+   height:25px;
+   position: absolute;
+   top:100%;
+}
+
+.best-warp .best-country li p,
+.best-warp .best-country li span {
+  display: inline-block;
+}
+
+.best-warp .best-country li span {
+  padding: 2px 6px;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 2px solid salmon;
+  color: salmon;
+  border-radius: 8px 8px 8px 2px;
+} */
+
+/*test*/
+
+        /* 배너 컨테이너 */
+        .rollingbanner{
+          position: relative;
+          width: 120px;
+          height: 32px;
+          font-size: .875rem;
+          letter-spacing: -1px;
+          padding: 7px 15px;
+          box-sizing: border-box;
+          border-radius: 16px;
+      }
+      /* 타이틀 */
+      .rollingbanner > .title{
+          font-weight: bold;
+          float: left;
+          padding-right: 10px;
+          padding: 2px 6px;
+          background-color: #fff;
+          border: 2px solid salmon;
+          color: salmon;
+          border-radius: 8px 8px 8px 2px;
+          margin-right: 6px;
+      }
+      /* 롤링 배너 */
+      .rollingbanner > .wrap{
+          position: relative;
+          width: auto;
+          height: 100%;
+          box-sizing: border-box;
+          overflow: hidden;
+      }        
+      .rollingbanner ul{
+          list-style: none;
+      }
+      .rollingbanner li{
+          position: absolute;
+          top: -36px;
+          left: 0;
+      }
+      /* 이전, 현재, 다음 롤링 배너 표시 */
+      .rollingbanner li.prev{
+          top: 36px;
+          transition: top 0.5s ease;
+      }
+      .rollingbanner li.current{
+          top: 0;
+          transition: top 0.5s ease;
+      }
+      .rollingbanner li.next{
+          top: -36px;
+      }
+      .rollingbanner a{
+          display: block;
+          display: -webkit-box;
+          text-decoration: none;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient:vertical;
+          overflow: hidden;
+          color: #000;
+      }
+      /* 반대 방향으로 진행 */
+      .rollingbanner.reverse li.prev{
+          top: -36px;
+          transition: top 0.5s ease;
+      }
+      .rollingbanner.reverse li.next{
+          top: 36px;
+      }
+
+/* test */
+
+
+.login-wrap {
+  margin-left: auto;
+}
+
+.login-wrap a {
+  color: #333;
+  padding: 0 6px;
+}
+
+.hot-icon{
+  margin-right:3px;
+}
+/* contain */
+
+/* #container{
+    width:1200px;
+    margin:0 auto;
+} */
+
+
+/* gsap test */
+.image {
+  background-color: #f2f2f2;
+  line-height: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tagline {
+  position: absolute;
+  padding-bottom: 16px;
+  color: white;
+  font-size: 48px;
+  opacity: 0;
+}
+
+.image>div {
+  width: 100%;
+}
+
+.image img {
+  width: 100%;
+  object-fit: contain;
+}
+
+#shrink {
+  transform: scale(1);
+}
+
+#shrink-tagline {
+  transform: translateY(80px);
+}
+
+/* */
+
+.slider-move {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.slider-container {
+  position: absolute;
+  left: calc((100vw - 1200px) / 2);
+  top: 148px;
+}
+
+.slider-background {
+  width: 681px;
+  height: 454px;
+  background-size: cover;
+  background-image: url("./image/slider/sd_2.jpg");
+  image-rendering : auto;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+/* @media (-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 144dpi),
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 1.5dppx) {
+  .slider-background {
+    background-image: url("./image/slider/sd_2.jpg");
+  }
+} */
+
+
+/* .apple-logo {
+  width: 20px;
+  object-fit: contain;
+  filter: invert(1);
+} */
+
+p.copy {
+  font-size: 24px;
+  font-family: 'LINESeedKR-Bd';
+  color: #eeeeee;
+  text-shadow: 1px 1px slategray;
+  text-align: center;
+  margin: 1.5em 0 0;
+  display: inline-block;
+  position: absolute;
+  left: calc(((100vw - 1200px) / 2 + 1.5vw));
+  top: calc(148px + 1.5vh);
+}
